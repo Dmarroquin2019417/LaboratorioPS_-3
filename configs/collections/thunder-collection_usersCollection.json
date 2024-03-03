@@ -1,0 +1,94 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "usersCollection",
+    "dateExported": "2024-02-28T14:59:58.306Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "8f91e031-58bd-4c2e-b56d-3ac4cfc2c9a6",
+            "colId": "206f7340-916d-408d-a198-f86d70a7be09",
+            "containerId": "",
+            "name": "addUser",
+            "url": "http://localhost:8080/adoptionSystem/v1/users",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-28T13:56:26.157Z",
+            "modified": "2024-02-28T14:52:03.130Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Test5\",\n  \"correo\":\"test5@kinal.edu.gt\",\n  \"password\":\"123456\",\n  \"phone\":\"22160000\",\n  \"role\":\"USER_ROLE\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3e06ea1c-8327-4b04-a95f-347ba7b8e76c",
+            "colId": "206f7340-916d-408d-a198-f86d70a7be09",
+            "containerId": "",
+            "name": "getUsers",
+            "url": "http://localhost:8080/adoptionSystem/v1/users",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-28T13:56:26.158Z",
+            "modified": "2024-02-28T13:56:26.158Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ee0f1364-9d88-4c5b-85f4-5207e31b44a9",
+            "colId": "206f7340-916d-408d-a198-f86d70a7be09",
+            "containerId": "",
+            "name": "getUserById",
+            "url": "http://localhost:8080/adoptionSystem/v1/users/65de5d6a4019edcaa967feae",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-28T13:56:26.159Z",
+            "modified": "2024-02-28T13:56:26.159Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3ce93610-5a40-49f8-95d8-1cab361e21f9",
+            "colId": "206f7340-916d-408d-a198-f86d70a7be09",
+            "containerId": "",
+            "name": "updateUser",
+            "url": "http://localhost:8080/adoptionSystem/v1/users/65deb00923a94a640e8df84f",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-02-28T13:56:26.160Z",
+            "modified": "2024-02-28T13:56:26.160Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"José Montufar\",\n  \"correo\":\"jmontufar@kinal.edu.gt\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f5b20bd1-43a8-4cb2-8b1f-847567e2f2ca",
+            "colId": "206f7340-916d-408d-a198-f86d70a7be09",
+            "containerId": "",
+            "name": "deleteUser",
+            "url": "http://localhost:8080/adoptionSystem/v1/users/65de5d6a4019edcaa967feae",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-02-28T13:56:26.161Z",
+            "modified": "2024-02-28T13:56:26.161Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlNWQ2YTQwMTllZGNhYTk2N2ZlYWUiLCJpYXQiOjE3MDkwOTQwOTcsImV4cCI6MTcwOTA5NzY5N30.9jS3u5wjF8bXUbvagY-russjl9pA9CaaNe__w0ei9ac"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
