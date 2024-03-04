@@ -63,26 +63,44 @@ export const getUserById = async (req, res) => {
     }
 }
 
-// Actualiza la información de un usuario
 export const updateUser = async (req, res = response) => {
     try {
         const { id } = req.params;
-        const { password, ...rest } = req.body;
+        const { oldPassword, newPassword, ...rest } = req.body;
 
-        if (password) {
-            const salt = bcryptjs.genSaltSync(); // Por defecto tiene 10 vueltas
-            rest.password = bcryptjs.hashSync(password, salt);
-        }
-
-        const user = await User.findByIdAndUpdate(id, rest, { new: true });
+        // Buscar el usuario por ID
+        const user = await User.findById(id);
 
         if (!user) {
             return res.status(404).json({ error: 'Usuario no encontrado' });
         }
 
+        // Verificar si se proporcionó la contraseña anterior y si coincide
+        if (oldPassword) {
+            const isPasswordValid = await bcryptjs.compare(oldPassword, user.password);
+            if (!isPasswordValid) {
+                return res.status(400).json({ error: 'La contraseña anterior es incorrecta' });
+            }
+        }
+
+        // Si se proporciona una nueva contraseña, encriptarla y actualizarla
+        if (newPassword) {
+            const salt = bcryptjs.genSaltSync(); // Por defecto tiene 10 vueltas
+            rest.password = bcryptjs.hashSync(newPassword, salt);
+
+            // Agregar la contraseña anterior a la lista de contraseñas anteriores
+            if (!user.contraseñaAnterior) {
+                user.contraseñaAnterior = [];
+            }
+            user.contraseñaAnterior.push(user.password);
+        }
+
+        // Actualizar el resto de la información del usuario
+        const updatedUser = await User.findByIdAndUpdate(id, rest, { new: true });
+
         res.status(200).json({
             msg: 'Usuario Actualizado',
-            user,
+            user: updatedUser,
         });
     } catch (error) {
         res.status(500).json({ error: error.message });

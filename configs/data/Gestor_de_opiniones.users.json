@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "65e526b0e7078f9b98959e98"
+  },
+  "nombre": "Diegocho",
+  "correo": "dieguito@.com",
+  "password": "$2a$10$IzBmfojBIgVhyJ2iXx.ol.I1u0mrNbLY5xItvELebpYLXPtMt8ZTe",
+  "instagram": "nuevoInstagram",
+  "estado": true,
+  "contraseñaAnterior": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e526d6e7078f9b98959e9d"
+  },
+  "nombre": "Mario",
+  "correo": "mario@kinal.edu.gt",
+  "password": "$2a$10$d8zMmiqrxQXtpimB99zjsO3MI7LCJ1FQm5oEGKotiYTa8lHD2AGEa",
+  "instagram": "mario_papi",
+  "estado": true,
+  "contraseñaAnterior": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e52718e7078f9b98959ea0"
+  },
+  "nombre": "Monica",
+  "correo": "monica@kinal.edu.gt",
+  "password": "$2a$10$x7SjZW5NVsus76mwfSV/J.fumMJtSRjkrUtB/OsSPEy6KritsvzqK",
+  "instagram": "monica_linda",
+  "estado": true,
+  "contraseñaAnterior": [],
+  "__v": 0
+}]

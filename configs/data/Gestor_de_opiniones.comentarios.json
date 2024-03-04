@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "65e528c1e7078f9b98959ed0"
+  },
+  "comentario": "Muy interesante bro",
+  "autor": {
+    "$oid": "65e526b0e7078f9b98959e98"
+  },
+  "publicacion": {
+    "$oid": "65e5280ce7078f9b98959eb4"
+  },
+  "fechaCreacion": {
+    "$date": "2024-03-04T01:49:53.257Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5294de7078f9b98959ee6"
+  },
+  "comentario": "Lo tomare en cuenta, muchas Gracias!",
+  "autor": {
+    "$oid": "65e526b0e7078f9b98959e98"
+  },
+  "publicacion": {
+    "$oid": "65e52884e7078f9b98959ec7"
+  },
+  "fechaCreacion": {
+    "$date": "2024-03-04T01:52:13.388Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e529f8e7078f9b98959f00"
+  },
+  "comentario": "Esoooo, gracias por la información",
+  "autor": {
+    "$oid": "65e526b0e7078f9b98959e98"
+  },
+  "publicacion": {
+    "$oid": "65e52819e7078f9b98959eb7"
+  },
+  "fechaCreacion": {
+    "$date": "2024-03-04T01:55:04.219Z"
+  },
+  "__v": 0
+}]

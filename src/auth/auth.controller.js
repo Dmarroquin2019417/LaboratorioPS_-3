@@ -3,7 +3,7 @@ import Usuario from '../user/user.model.js';
 import { generarJWT } from '../helpers/generate-jwt.js'; 
 
 export const login = async (req, res) => {
-    const { correo, nombre, password } = req.body;
+    const { correo, nombre, password, oldPassword, newPassword } = req.body;
 
     try {
         let usuario;
@@ -30,6 +30,21 @@ export const login = async (req, res) => {
             return res.status(400).json({
                 msg: "La contraseña es incorrecta",
             });
+        }
+
+        // Verificar y actualizar la contraseña si se proporciona la contraseña anterior y la nueva contraseña
+        if (oldPassword && newPassword) {
+            const validOldPassword = bcryptjs.compareSync(oldPassword, usuario.password);
+            if (!validOldPassword) {
+                return res.status(400).json({
+                    msg: "La contraseña anterior es incorrecta",
+                });
+            }
+
+            // Encriptar y actualizar la nueva contraseña
+            const salt = bcryptjs.genSaltSync();
+            usuario.password = bcryptjs.hashSync(newPassword, salt);
+            await usuario.save();
         }
 
         // Generar el JWT

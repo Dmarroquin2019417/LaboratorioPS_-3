@@ -1,0 +1,90 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Publicaciones",
+    "dateExported": "2024-03-04T02:00:20.331Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "13d7d8b1-eaff-47f5-a398-872175a92e3b",
+            "colId": "8d537a97-d53e-4b98-b38a-25924cdf0a00",
+            "containerId": "",
+            "name": "Crear_publicación",
+            "url": "http://localhost:7070/opiniones/v1/publics",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-03T20:29:23.496Z",
+            "modified": "2024-03-04T01:47:05.323Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1MjZiMGU3MDc4ZjliOTg5NTllOTgiLCJpYXQiOjE3MDk1MTY2OTcsImV4cCI6MTcwOTUyMDI5N30.WC0djfoMfkUCXH-FOVqtNbiZzEfbvigRVuYPymIHc1E"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\": \"Los beneficios del yoga para la salud mental\",\n  \"categoria\": \"Salud\",\n  \"texto\": \"Descubre cómo el yoga puede beneficiar tu salud mental y emocional. A través de la práctica regular de posturas, respiración y meditación, el yoga puede ayudarte a reducir el estrés, aumentar la claridad mental y mejorar tu bienestar general. Este artículo explora los diversos aspectos del yoga y cómo pueden contribuir positivamente a tu salud mental.\"\n}\n\n\n\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fc5c0989-2101-46ae-8946-fe0984a95a15",
+            "colId": "8d537a97-d53e-4b98-b38a-25924cdf0a00",
+            "containerId": "",
+            "name": "Ver_publicaciones",
+            "url": "http://localhost:7070/opiniones/v1/publics",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-03T20:59:10.734Z",
+            "modified": "2024-03-03T20:59:16.773Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "93e45bd8-6386-4f8c-8093-74416fe66f90",
+            "colId": "8d537a97-d53e-4b98-b38a-25924cdf0a00",
+            "containerId": "",
+            "name": "Editar_publicación",
+            "url": "http://localhost:7070/opiniones/v1/publics/65e52884e7078f9b98959ec7",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-03T21:18:07.086Z",
+            "modified": "2024-03-04T01:49:03.106Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1MjZiMGU3MDc4ZjliOTg5NTllOTgiLCJpYXQiOjE3MDk1MTY2OTcsImV4cCI6MTcwOTUyMDI5N30.WC0djfoMfkUCXH-FOVqtNbiZzEfbvigRVuYPymIHc1E"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\": \"Psicologia\",\n  \"categoria\": \"Autoayuda\",\n  \"texto\": \"En esta publicación, encontrarás consejos y técnicas prácticas para mejorar tu autoestima y alcanzar tus metas personales. Desde el poder de los pensamientos positivos hasta la importancia de establecer límites saludables, descubre cómo puedes trabajar en tu crecimiento personal y emocional.\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "36019911-0aa0-4437-84b8-bfeda4381cbb",
+            "colId": "8d537a97-d53e-4b98-b38a-25924cdf0a00",
+            "containerId": "",
+            "name": "Delete_publicaciones",
+            "url": "http://localhost:7070/opiniones/v1/publics/65e527d3e7078f9b98959eb1",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-03T21:21:37.981Z",
+            "modified": "2024-03-04T01:48:37.932Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1MjZiMGU3MDc4ZjliOTg5NTllOTgiLCJpYXQiOjE3MDk1MTY2OTcsImV4cCI6MTcwOTUyMDI5N30.WC0djfoMfkUCXH-FOVqtNbiZzEfbvigRVuYPymIHc1E"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

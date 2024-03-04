@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "65e5280ce7078f9b98959eb4"
+  },
+  "titulo": "Explorando la Riviera Maya: un paraíso en la tierra",
+  "categoria": "Viajes",
+  "texto": "Sumérgete en la belleza natural y la rica cultura de la Riviera Maya. Desde las impresionantes ruinas mayas hasta las playas de aguas cristalinas, este destino ofrece una experiencia única para los amantes de la aventura y la relajación. Descubre todo lo que la Riviera Maya tiene para ofrecer en este emocionante artículo de viaje.",
+  "fechaCreacion": {
+    "$date": "2024-03-04T01:46:52.532Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e52819e7078f9b98959eb7"
+  },
+  "titulo": "Los beneficios del yoga para la salud mental",
+  "categoria": "Salud",
+  "texto": "Descubre cómo el yoga puede beneficiar tu salud mental y emocional. A través de la práctica regular de posturas, respiración y meditación, el yoga puede ayudarte a reducir el estrés, aumentar la claridad mental y mejorar tu bienestar general. Este artículo explora los diversos aspectos del yoga y cómo pueden contribuir positivamente a tu salud mental.",
+  "fechaCreacion": {
+    "$date": "2024-03-04T01:47:05.290Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e52884e7078f9b98959ec7"
+  },
+  "titulo": "Psicologia",
+  "categoria": "Autoayuda",
+  "texto": "En esta publicación, encontrarás consejos y técnicas prácticas para mejorar tu autoestima y alcanzar tus metas personales. Desde el poder de los pensamientos positivos hasta la importancia de establecer límites saludables, descubre cómo puedes trabajar en tu crecimiento personal y emocional.",
+  "fechaCreacion": {
+    "$date": "2024-03-04T01:48:52.929Z"
+  },
+  "__v": 0
+}]

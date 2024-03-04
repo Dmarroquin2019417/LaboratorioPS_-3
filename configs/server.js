@@ -8,14 +8,16 @@ import { dbConnection } from './mongo.js';
 import userRoutes from '../src/user/user.routes.js';
 import authRoutes from '../src/auth/auth.routes.js';
 import publicRoutes from '../src/publications/public.routes.js';
+import comentarioRoutes from '../src/coments/coments.routes.js';
 
 class Server {
     constructor() {
         this.app = express();
         this.port = process.env.PORT;
         this.usuarioPath = '/opiniones/v1/users';
-        this.authPath = '/opiniones/v1/auth'
-        this.publicPath = '/opiniones/v1/publics'
+        this.authPath = '/opiniones/v1/auth';
+        this.publicPath = '/opiniones/v1/publics';
+        this.comentarioPath = '/opiniones/v1/coments'; 
 
         this.middlewares();  // Configura los middleware de la aplicación
         this.conectarDB();  // Establece la conexión a la base de datos
@@ -41,6 +43,7 @@ class Server {
         this.app.use(this.usuarioPath, userRoutes);
         this.app.use(this.authPath, authRoutes);
         this.app.use(this.publicPath, publicRoutes);
+        this.app.use(this.comentarioPath, comentarioRoutes); 
     }
 
     // Inicia el servidor y escucha en el puerto especificado
